@@ -78,6 +78,7 @@ This package contains Harfbuzz ICU support library.
 %dir %{_libdir}/girepository-1.0
 %{_libdir}/girepository-1.0/HarfBuzz-0.0.typelib
 
+
 %files devel
 %doc %{_datadir}/gtk-doc
 %{_bindir}/hb-view
