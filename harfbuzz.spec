@@ -98,8 +98,10 @@ This package contains Harfbuzz ICU support library.
 %dir %{_datadir}/gir-1.0
 %{_datadir}/gir-1.0/HarfBuzz-0.0.gir
 
+
 %files icu
 %{_libdir}/libharfbuzz-icu.so.*
+
 
 %changelog
 * Thu Jun 17 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-100
