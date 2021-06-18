@@ -1,11 +1,13 @@
-%global release_prefix          101
+%global release_prefix          102
 
 Name:                           harfbuzz
 Version:                        2.8.1
 Release:                        %{release_prefix}%{?dist}
 Summary:                        Text shaping library
 License:                        MIT
-URL:                            https://harfbuzz.github.io/
+URL:                            https://harfbuzz.github.io
+Vendor:                         Package Store <https://pkgstore.github.io>
+Packager:                       Kitsune Solar <kitsune.solar@gmail.com>
 
 Source0:                        https://github.com/harfbuzz/harfbuzz/releases/download/%{version}/harfbuzz-%{version}.tar.xz
 
@@ -104,6 +106,9 @@ This package contains Harfbuzz ICU support library.
 
 
 %changelog
+* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-102
+- UPD: Add "Vendor" & "Packager" fields.
+
 * Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-101
 - UPD: New build for latest changes.
 
