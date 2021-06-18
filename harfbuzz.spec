@@ -1,4 +1,4 @@
-%global release_prefix          100
+%global release_prefix          101
 
 Name:                           harfbuzz
 Version:                        2.8.1
@@ -104,6 +104,9 @@ This package contains Harfbuzz ICU support library.
 
 
 %changelog
+* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-101
+- UPD: New build for latest changes.
+
 * Thu Jun 17 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-100
 - UPD: To Package Store.
 - UPD: License.
