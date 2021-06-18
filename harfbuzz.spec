@@ -61,7 +61,7 @@ This package contains Harfbuzz ICU support library.
 
 %install
 %{make_install}
-%{__rm} -f $RPM_BUILD_ROOT%{_libdir}/*.la
+%{__rm} -f %{buildroot}%{_libdir}/*.la
 
 
 %ldconfig_scriptlets
