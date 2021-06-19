@@ -9,7 +9,7 @@ URL:                            https://harfbuzz.github.io
 Vendor:                         Package Store <https://pkgstore.github.io>
 Packager:                       Kitsune Solar <kitsune.solar@gmail.com>
 
-Source0:                        https://github.com/harfbuzz/harfbuzz/releases/download/%{version}/harfbuzz-%{version}.tar.xz
+Source0:                        https://github.com/harfbuzz/harfbuzz/releases/download/%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:                  cairo-devel
 BuildRequires:                  freetype-devel
