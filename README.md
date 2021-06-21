@@ -8,6 +8,7 @@ This is **HarfBuzz**, a text shaping library.
 
 ```
 $ dnf copr enable pkgstore/harfbuzz
+$ dnf install -y harfbuzz
 ```
 
 ### Open Build Service (OBS)
