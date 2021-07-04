@@ -23,6 +23,13 @@ $ dnf install -y harfbuzz
 $ dnf upgrade -y harfbuzz
 ```
 
+## Remove
+
+```
+$ dnf erase -y harfbuzz
+$ dnf copr remove pkgstore/harfbuzz
+```
+
 ## How to Build
 
 1. Get source from [src.fedoraproject.org](https://src.fedoraproject.org/rpms/harfbuzz).
