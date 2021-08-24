@@ -107,7 +107,7 @@ This package contains Harfbuzz ICU support library.
 
 %changelog
 * Tue Aug 24 2021 Package Store <kitsune.solar@gmail.com> - 2.9.0-100
-- NEW: v2.8.2.
+- NEW: v2.9.0.
 
 * Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.2-100
 - NEW: v2.8.2.
