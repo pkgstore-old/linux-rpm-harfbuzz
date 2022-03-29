@@ -1,7 +1,7 @@
 %global release_prefix          100
 
 Name:                           harfbuzz
-Version:                        2.9.0
+Version:                        4.1.0
 Release:                        %{release_prefix}%{?dist}
 Summary:                        Text shaping library
 License:                        MIT
@@ -9,7 +9,7 @@ URL:                            https://harfbuzz.github.io
 Vendor:                         Package Store <https://pkgstore.github.io>
 Packager:                       Kitsune Solar <kitsune.solar@gmail.com>
 
-Source0:                        https://github.com/harfbuzz/harfbuzz/releases/download/%{version}/%{name}-%{version}.tar.xz
+Source0:                        https://github.com/harfbuzz/harfbuzz/releases/download/%{version}/harfbuzz-%{version}.tar.xz
 
 BuildRequires:                  cairo-devel
 BuildRequires:                  freetype-devel
@@ -106,8 +106,62 @@ This package contains Harfbuzz ICU support library.
 
 
 %changelog
+* Tue Mar 29 2022 Package Store <pkgstore@mail.ru> - 4.1.0-100
+- UPD: Rebuild by Package Store.
+
+* Mon Mar 28 2022 Parag Nemade <pnemade AT redhat DOT com> - 4.1.0-1
+- Update to 4.1.0 version (#2067726)
+
+* Mon Mar 14 2022 Parag Nemade <pnemade AT redhat DOT com> - 4.0.1-1
+- Update to 4.0.1 version (#2063439)
+
+* Thu Mar 03 2022 Parag Nemade <pnemade AT redhat DOT com> - 4.0.0-1
+- Update to 4.0.0 version (#2059806)
+
+* Sun Feb 13 2022 Parag Nemade <pnemade AT redhat DOT com> - 3.4.0-1
+- Update to 3.4.0 version (#2053891)
+
+* Sun Feb 06 2022 Fedora Release Monitoring <release-monitoring@fedoraproject.org> - 3.3.2-1
+- Update to 3.3.2 (#2051293)
+
+* Thu Feb 03 2022 Parag Nemade <pnemade AT redhat DOT com> - 3.3.1-1
+- Update to 3.3.1 version (#2048881)
+
+* Thu Jan 20 2022 Fedora Release Engineering <releng@fedoraproject.org> - 3.2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
+
+* Mon Dec 13 2021 Parag Nemade <pnemade AT redhat DOT com> - 3.2.0-1
+- Update to 3.2.0 version (#2031525)
+
+* Tue Nov 30 2021 Parag Nemade <pnemade AT redhat DOT com> - 3.1.2-1
+- Update to 3.1.2 version (#2026992)
+
+* Tue Nov 09 2021 Parag Nemade <pnemade AT redhat DOT com> - 3.1.1-1
+- Update to 3.1.1 version (#2021316)
+
+* Sat Nov 06 2021 Parag Nemade <pnemade AT redhat DOT com> - 3.1.0-2
+- Fix build failure on armv7hl architecture
+
+* Fri Nov 05 2021 Parag Nemade <pnemade AT redhat DOT com> - 3.1.0-1
+- Update to 3.1.0 version (#2020154)
+
+* Sat Sep 18 2021 Parag Nemade <pnemade AT redhat DOT com> - 3.0.0-1
+- Update to 3.0.0 version (#2005503)
+
+* Mon Sep 13 2021 Parag Nemade <pnemade AT redhat DOT com> - 2.9.1-1
+- Update to 2.9.1 version (#2002020)
+
 * Tue Aug 24 2021 Package Store <kitsune.solar@gmail.com> - 2.9.0-100
 - NEW: v2.9.0.
+
+* Fri Aug 20 2021 Parag Nemade <pnemade AT redhat DOT com> - 2.9.0-1
+- Update to 2.9.0 version (#1995436)
+
+* Thu Jul 22 2021 Fedora Release Engineering <releng@fedoraproject.org> - 2.8.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
+* Mon Jul 12 2021 Parag Nemade <pnemade AT redhat DOT com> - 2.8.2-1
+- Update to 2.8.2 version (#1980729)
 
 * Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.2-100
 - NEW: v2.8.2.
