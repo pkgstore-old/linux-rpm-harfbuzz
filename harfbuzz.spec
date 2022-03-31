@@ -1,4 +1,4 @@
-%global release_prefix          100
+%global release_prefix          1000
 
 Name:                           harfbuzz
 Version:                        4.1.0
@@ -6,10 +6,8 @@ Release:                        %{release_prefix}%{?dist}
 Summary:                        Text shaping library
 License:                        MIT
 URL:                            https://harfbuzz.github.io
-Vendor:                         Package Store <https://pkgstore.github.io>
-Packager:                       Kitsune Solar <kitsune.solar@gmail.com>
 
-Source0:                        https://github.com/harfbuzz/harfbuzz/releases/download/%{version}/harfbuzz-%{version}.tar.xz
+Source0:                        %{name}-%{version}.tar.xz
 
 BuildRequires:                  cairo-devel
 BuildRequires:                  freetype-devel
@@ -66,9 +64,9 @@ This package contains Harfbuzz ICU support library.
 %{__rm} -f %{buildroot}%{_libdir}/*.la
 
 
-%ldconfig_scriptlets
+%{ldconfig_scriptlets}
 
-%ldconfig_scriptlets icu
+%{ldconfig_scriptlets} icu
 
 
 %files
@@ -106,6 +104,10 @@ This package contains Harfbuzz ICU support library.
 
 
 %changelog
+* Thu Mar 31 2022 Package Store <pkgstore@mail.ru> - 4.1.0-1000
+- UPD: Rebuild by Package Store.
+- UPD: File "harfbuzz.spec".
+
 * Tue Mar 29 2022 Package Store <pkgstore@mail.ru> - 4.1.0-100
 - UPD: Rebuild by Package Store.
 
@@ -151,9 +153,6 @@ This package contains Harfbuzz ICU support library.
 * Mon Sep 13 2021 Parag Nemade <pnemade AT redhat DOT com> - 2.9.1-1
 - Update to 2.9.1 version (#2002020)
 
-* Tue Aug 24 2021 Package Store <kitsune.solar@gmail.com> - 2.9.0-100
-- NEW: v2.9.0.
-
 * Fri Aug 20 2021 Parag Nemade <pnemade AT redhat DOT com> - 2.9.0-1
 - Update to 2.9.0 version (#1995436)
 
@@ -162,19 +161,6 @@ This package contains Harfbuzz ICU support library.
 
 * Mon Jul 12 2021 Parag Nemade <pnemade AT redhat DOT com> - 2.8.2-1
 - Update to 2.8.2 version (#1980729)
-
-* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.2-100
-- NEW: v2.8.2.
-
-* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-102
-- UPD: Add "Vendor" & "Packager" fields.
-
-* Fri Jun 18 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-101
-- UPD: New build for latest changes.
-
-* Thu Jun 17 2021 Package Store <kitsune.solar@gmail.com> - 2.8.1-100
-- UPD: To Package Store.
-- UPD: License.
 
 * Thu May 20 2021 Pete Walter <pwalter@fedoraproject.org> - 2.8.1-2
 - Rebuild for ICU 69
