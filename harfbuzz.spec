@@ -64,7 +64,7 @@ This package contains Harfbuzz ICU support library.
 %{__rm} -f %{buildroot}%{_libdir}/*.la
 
 
-%{ldconfig_scriptlets}
+%ldconfig_scriptlets
 
 %ldconfig_scriptlets icu
 
